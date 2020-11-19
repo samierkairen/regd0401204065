@@ -1,0 +1,87 @@
+AG92551@VDAASW10SL03749 MINGW64 /c/SERVICES
+$ git clone https://AG92551@bitbucket.anthem.com/scm/soadutl/salesquoteservicev2.git
+Cloning into 'salesquoteservicev2'...
+fatal: Authentication failed for 'https://bitbucket.anthem.com/scm/soadutl/salesquoteservicev2.git/'
+
+AG92551@VDAASW10SL03749 MINGW64 /c/SERVICES
+$ git clone https://AG92551@bitbucket.anthem.com/scm/soadutl/salesquoteservicev2.git
+Cloning into 'salesquoteservicev2'...
+remote: Enumerating objects: 912, done.
+remote: Counting objects: 100% (912/912), done.
+remote: Compressing objects: 100% (461/461), done.
+
+Receiving objects: 100% (912/912), 179.31 KiB | 3.90 MiB/s, done.
+Resolving deltas: 100% (297/297), done.
+
+AG92551@VDAASW10SL03749 MINGW64 /c/SERVICES
+$ git clone https://AG92551@bitbucket.anthem.com/scm/soadutl/salesquotesfdcv2.git
+Cloning into 'salesquotesfdcv2'...
+remote: Enumerating objects: 604, done.
+remote: Counting objects: 100% (604/604), done.
+remote: Compressing objects: 100% (340/340), done.
+remote: Total 604 (delta 182), reused 213 (delta 95)
+Receiving objects: 100% (604/604), 100.80 KiB | 625.00 KiB/s, done.
+Resolving deltas: 100% (182/182), done.
+
+AG92551@VDAASW10SL03749 MINGW64 /c/SERVICES
+$ git clone https://AG92551@bitbucket.anthem.com/scm/soadutl/salesquoteservicev1.git
+Cloning into 'salesquoteservicev1'...
+remote: Enumerating objects: 1035, done.
+remote: Counting objects: 100% (1035/1035), done.
+remote: Compressing objects: 100% (462/462), done.
+
+Receiving objects: 100% (1035/1035), 191.35 KiB | 2.25 MiB/s, done.
+Resolving deltas: 100% (313/313), done.
+
+AG92551@VDAASW10SL03749 MINGW64 /c/SERVICES
+$ git clone https://AG92551@bitbucket.anthem.com/scm/soadutl/memberbenefitinquiryv3.git
+Cloning into 'memberbenefitinquiryv3'...
+remote: Enumerating objects: 2057, done.
+remote: Counting objects: 100% (2057/2057), done.
+remote: Compressing objects: 100% (1278/1278), done.
+
+Receiving objects: 100% (2057/2057), 286.92 KiB | 116.00 KiB/s, done.
+Resolving deltas: 100% (490/490), done.
+
+AG92551@VDAASW10SL03749 MINGW64 /c/SERVICES
+$ git clone https://AG92551@bitbucket.anthem.com/scm/soadutl/memberbenefitinquiryv4.git
+Cloning into 'memberbenefitinquiryv4'...
+remote: Enumerating objects: 1855, done.
+remote: Counting objects: 100% (1855/1855), done.
+remote: Compressing objects: 100% (1065/1065), done.
+remote: Total 1855 (delta 739), reused 472 (delta 230)
+Receiving objects: 100% (1855/1855), 378.79 KiB | 4.03 MiB/s, done.
+Resolving deltas: 100% (739/739), done.
+
+AG92551@VDAASW10SL03749 MINGW64 /c/SERVICES
+$ git clone https://AG92551@bitbucket.anthem.com/scm/soadutl/claiminquiryv2.git
+Cloning into 'claiminquiryv2'...
+remote: Enumerating objects: 1387, done.
+remote: Counting objects: 100% (1387/1387), done.
+remote: Compressing objects: 100% (945/945), done.
+remote: Total 1387 (delta 388), reused 0 (delta 0)Receiving objects:  94% (1304/1387)
+Receiving objects: 100% (1387/1387), 218.51 KiB | 1.01 MiB/s, done.
+Resolving deltas: 100% (388/388), done.
+
+AG92551@VDAASW10SL03749 MINGW64 /c/SERVICES
+$ git clone https://AG92551@bitbucket.anthem.com/scm/soadutl/groupmanagementv3.git
+Cloning into 'groupmanagementv3'...
+remote: Enumerating objects: 1201, done.
+remote: Counting objects: 100% (1201/1201), done.
+remote: Compressing objects: 100% (751/751), done.
+
+Receiving objects: 100% (1201/1201), 198.31 KiB | 705.00 KiB/s, done.
+Resolving deltas: 100% (241/241), done.
+
+AG92551@VDAASW10SL03749 MINGW64 /c/SERVICES
+$ git clone https://AG92551@bitbucket.anthem.com/scm/soadutl/memberspendingaccountv2.git
+Cloning into 'memberspendingaccountv2'...
+remote: Enumerating objects: 875, done.
+remote: Counting objects: 100% (875/875), done.
+remote: Compressing objects: 100% (670/670), done.
+remote: Total 875 (delta 230), reused 0 (delta 0)
+Receiving objects: 100% (875/875), 168.13 KiB | 173.00 KiB/s, done.
+Resolving deltas: 100% (230/230), done.
+
+AG92551@VDAASW10SL03749 MINGW64 /c/SERVICES
+$
