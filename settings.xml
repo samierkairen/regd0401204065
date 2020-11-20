@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+    <mirrors>
+        <mirror> 
+            <id>repo-prod-public</id> 
+            <mirrorOf>*</mirrorOf> 
+            <url>https://artifactory.anthem.com:443/artifactory/public</url> 
+        </mirror>
+    </mirrors>
+    <servers>
+        <server> 
+            <id>repo-prod-public</id> 
+            <username>ag92551</username> 
+            <password>Anthem@123</password> 
+        </server>
+	<server> 
+            <id>Artifactory</id> 
+            <username>ag92551</username> 
+            <password>Anthem@123</password> 
+        </server>
+	<server> 
+            <id>repo-prod-releases</id> 
+            <username>ag92551</username> 
+            <password>Anthem@123</password> 
+        </server>
+	<server> 
+            <id>repo-prod-snapshots</id> 
+            <username>ag92551</username> 
+            <password>Anthem@123</password> 
+        </server>
+	<server> 
+            <id>repo-thirdparty-releases</id> 
+            <username>ag92551</username> 
+            <password>Anthem@123</password> 
+        </server>
+	<server> 
+            <id>spring-releases</id> 
+            <username>ag92551</username> 
+            <password>Anthem@123</password> 
+        </server>
+	<server> 
+            <id>jcenter-cache</id> 
+            <username>ag92551</username> 
+            <password>Anthem@123</password> 
+        </server>
+	<server> 
+            <id>Spring-milestone</id> 
+            <username>ag92551</username> 
+            <password>Anthem@123</password> 
+        </server>
+	<server> 
+            <id>maven-mystery</id> 
+            <username>ag92551</username> 
+            <password>Anthem@123</password> 
+        </server>
+	<server> 
+            <id>Atlassian-cache</id> 
+            <username>ag92551</username> 
+            <password>Anthem@123</password> 
+        </server>
+    </servers>
+<profiles> 
+
+  <profile> 
+
+   <id>BATStandardProfile</id> 
+
+   <activation> 
+
+    <activeByDefault>true</activeByDefault> 
+
+   </activation> 
+
+   <repositories> 
+
+    <!-- 
+
+     While the mirrorOf * sends all traffic to the WellPoint Artifactory 
+
+     repository - defining the specific repositories contained in 
+
+     Artifactory helps maven understand what they are used for and when they 
+
+     should be checked for updates. 
+
+    --> 
+
+    <repository> 
+
+     <id>repo-prod-releases</id> 
+
+     <name>WellPoint Maven Releases Repository</name> 
+
+     <releases> 
+
+      <enabled>true</enabled> 
+
+      <updatePolicy>always</updatePolicy> 
+
+      <checksumPolicy>warn</checksumPolicy> 
+
+     </releases> 
+
+     <snapshots> 
+
+      <enabled>false</enabled> 
+
+      <updatePolicy>never</updatePolicy> 
+
+      <checksumPolicy>fail</checksumPolicy> 
+
+     </snapshots> 
+
+     <url>https://va10pwprpo001.us.ad.wellpoint.com/artifactory/maven-releases</url> 
+
+     <layout>default</layout> 
+
+    </repository> 
+
+    <repository> 
+
+     <id>repo-prod-snapshots</id> 
+
+     <name>WellPoint Maven Snapshots Repository</name> 
+
+     <releases> 
+
+      <enabled>false</enabled> 
+
+      <updatePolicy>never</updatePolicy> 
+
+      <checksumPolicy>fail</checksumPolicy> 
+
+     </releases> 
+
+     <snapshots> 
+
+      <enabled>true</enabled> 
+
+      <updatePolicy>always</updatePolicy> 
+
+      <checksumPolicy>fail</checksumPolicy> 
+
+     </snapshots> 
+
+     <url>https://va10pwprpo001.us.ad.wellpoint.com/artifactory/maven-snapshots</url> 
+
+     <layout>default</layout> 
+
+    </repository> 
+	
+	 <repository> 
+
+     <id>repo-thirdparty-releases</id> 
+
+     <name>WellPoint Maven thirdparty Repository</name> 
+
+     <releases> 
+
+      <enabled>true</enabled> 
+
+      <updatePolicy>always</updatePolicy> 
+
+      <checksumPolicy>warn</checksumPolicy> 
+
+     </releases> 
+
+     <snapshots> 
+
+      <enabled>false</enabled> 
+
+      <updatePolicy>never</updatePolicy> 
+
+      <checksumPolicy>fail</checksumPolicy> 
+
+     </snapshots> 
+
+     <url>https://va10pwprpo001.us.ad.wellpoint.com/artifactory/maven-thirdparty</url> 
+
+     <layout>default</layout> 
+
+    </repository> 
+	
+	 <repository> 
+
+     <id>spring-releases</id> 
+
+     <name>Spring releases Repository</name> 
+
+     <releases> 
+
+      <enabled>true</enabled> 
+
+      <updatePolicy>always</updatePolicy> 
+
+      <checksumPolicy>warn</checksumPolicy> 
+
+     </releases> 
+
+     <snapshots> 
+
+      <enabled>false</enabled> 
+
+      <updatePolicy>never</updatePolicy> 
+
+      <checksumPolicy>fail</checksumPolicy> 
+
+     </snapshots> 
+
+     <url>https://va10pwprpo001.us.ad.wellpoint.com/artifactory/Spring-release/</url> 
+
+     <layout>default</layout> 
+
+    </repository> 
+	
+	<repository> 
+
+     <id>maven-mystery</id> 
+
+     <name>maven-mystery</name> 
+
+     <releases> 
+
+      <enabled>true</enabled> 
+
+      <updatePolicy>always</updatePolicy> 
+
+      <checksumPolicy>warn</checksumPolicy> 
+
+     </releases> 
+
+     <snapshots> 
+
+      <enabled>false</enabled> 
+
+      <updatePolicy>never</updatePolicy> 
+
+      <checksumPolicy>fail</checksumPolicy> 
+
+     </snapshots> 
+
+     <url>https://va10pwprpo001.us.ad.wellpoint.com/artifactory/list/maven-mystery/</url> 
+
+     <layout>default</layout> 
+
+    </repository> 
+	
+	<repository> 
+
+     <id>jcenter-cache</id> 
+
+     <name>jcenter-cache</name> 
+
+     <releases> 
+
+      <enabled>true</enabled> 
+
+      <updatePolicy>always</updatePolicy> 
+
+      <checksumPolicy>warn</checksumPolicy> 
+
+     </releases> 
+
+     <snapshots> 
+
+      <enabled>false</enabled> 
+
+      <updatePolicy>never</updatePolicy> 
+
+      <checksumPolicy>fail</checksumPolicy> 
+
+     </snapshots> 
+
+     <url>https://va10pwprpo001.us.ad.wellpoint.com/artifactory/list/jcenter-cache/</url> 
+
+     <layout>default</layout> 
+
+    </repository> 
+	
+	<repository> 
+
+     <id>Atlassian-cache</id> 
+
+     <name>Atlassian-cache</name> 
+
+     <releases> 
+
+      <enabled>true</enabled> 
+
+      <updatePolicy>always</updatePolicy> 
+
+      <checksumPolicy>warn</checksumPolicy> 
+
+     </releases> 
+
+     <snapshots> 
+
+      <enabled>false</enabled> 
+
+      <updatePolicy>never</updatePolicy> 
+
+      <checksumPolicy>fail</checksumPolicy> 
+
+     </snapshots> 
+
+     <url>https://va10pwprpo001.us.ad.wellpoint.com/artifactory/list/Atlassian-cache/</url> 
+
+     <layout>default</layout> 
+
+    </repository> 
+	
+	 <repository> 
+
+     <id>Spring-milestone</id> 
+
+     <name>Spring-milestone Repository</name> 
+
+     <releases> 
+
+      <enabled>true</enabled> 
+
+      <updatePolicy>always</updatePolicy> 
+
+      <checksumPolicy>warn</checksumPolicy> 
+
+     </releases> 
+
+     <snapshots> 
+
+      <enabled>true</enabled> 
+
+      <updatePolicy>never</updatePolicy> 
+
+      <checksumPolicy>fail</checksumPolicy> 
+
+     </snapshots> 
+
+     <url>https://va10pwprpo001.us.ad.wellpoint.com/artifactory/Spring-milestone/</url> 
+
+     <layout>default</layout> 
+
+    </repository>
+
+   </repositories> 
+
+
+   <properties> 
+
+    <!-- 
+
+     LOCAL SERVER DETAILS: Use the following properties to configure your local 
+
+     WebSphere Application Server. Entries are the default WAS7 server created 
+
+     when a new project is created in RSA.  
+
+
+     websphere.host - default for deploying to the local WAS7 instance  
+
+     websphere.conntype - SOAP - default for deploying to the local WAS7 instance 
+
+     websphere.port - 8880 - default for deploying to the local WAS7 instance 
+
+     websphere.profile.name - the name of your active WebSphere profile 
+
+     websphere.username - username for admin console (if you have security enabled) 
+
+     websphere.password - password for admin console (if you have security enabled) 
+
+     websphere.home.dir - The standard installation location for RSA/ 
+
+    --> 
+
+
+    <websphere.host>localhost</websphere.host> 
+
+    <websphere.conntype>SOAP</websphere.conntype> 
+
+    <websphere.port>8880</websphere.port> 
+
+    <websphere.profile.name>was70profile1</websphere.profile.name> 
+
+    <websphere.username/> 
+
+    <websphere.password/> 
+
+    <websphere.home.dir>C:/Program Files/IBM/SDP/runtimes/base_v7/</websphere.home.dir> 
+
+  </properties> 
+
+  </profile> 
+
+ </profiles> 
+
+
+ <!-- 
+
+  Finally ensure that our profile is active.  
+
+  --> 
+
+ <activeProfiles> 
+
+  <activeProfile>BATStandardProfile</activeProfile> 
+
+ </activeProfiles> 
+
+</settings>

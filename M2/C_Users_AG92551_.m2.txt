@@ -1,0 +1,3 @@
+C:\Users\AG92551\.m2
+
+STS4.7.1.exe
